@@ -25,7 +25,7 @@ namespace PlayingCards
         {
             var deck = new Deck();
 
-            for (int rank = CardRank.Six.Value(); rank < CardRank.Ace.Value(); rank++)
+            for (int rank = CardRank.Six.Value(); rank <= CardRank.Ace.Value(); rank++)
             {
                 foreach (CardSuit suit in Enum.GetValues(typeof(CardSuit)))
                 {
